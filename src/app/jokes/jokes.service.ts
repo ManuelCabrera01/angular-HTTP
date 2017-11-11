@@ -12,7 +12,7 @@ export class JokesService {
   getRandom(): Observable<string> {
      return this.http.get('http://api.icndb.com/jokes/random')
        .map((res: Response) => res.json())
-       .map((res) => res.value.joke);        <!-- Extract only useful string
+       .map((res) => res.value.joke);       
 
   }
 }
