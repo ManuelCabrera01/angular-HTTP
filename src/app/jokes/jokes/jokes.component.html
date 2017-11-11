@@ -2,5 +2,5 @@
   jokes works!
 </p>
 <h3> Jokes </h3>
-   <button (click)="getRandomJoke()"> Get Random Joke </button>
-   <pre>{{ joke | json }} </pre>
+<button (click)="getRandomJoke()"> Get Random Joke </button>
+<p>{{ joke$ | async }} </p>
